@@ -1,5 +1,93 @@
 <html>
-  <body>
-    Hello world
-  </body>
+<style>
+  .fade-in-image {
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+  }
+
+  .fade-in-link {
+    -webkit-animation-name: fade-link;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in;
+    animation-name: fade-link;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+  }
+
+  @-webkit-keyframes fade-link {
+    0% {
+      opacity: 0
+    }
+
+    100% {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade-link {
+
+    0% {
+      opacity: 0
+    }
+
+    100% {
+      opacity: 1
+    }
+  }
+
+  @-webkit-keyframes fade {
+
+    0%,
+    100% {
+      opacity: 0
+    }
+
+    50% {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+
+    0%,
+    100% {
+      opacity: 0
+    }
+
+    50% {
+      opacity: 1
+    }
+  }
+</style>
+
+<body style="display: flex; justify-content: center;background-color: bisque;">
+  <div id="parent" style="border: black solid 2px; padding: 10px;">
+    <h1 style="margin-top: 5px; margin-bottom: 0px">Runze and Alec's Wedding</h1>
+
+    <p style="margin-top: 2px">Runze and Alec invite you to celebrate their marriage</p>
+    <a class="fade-in-link" href="https://forms.gle/PuydeA3eM1yPxtyr8">Please select your dinner preference</a>
+    <p>
+      <span style="display:block">
+        <b>Date</b>: Saturday, July 6 at 5:00PM
+      </span>
+      <span style="display:block">
+        <b>Location</b>: Willows Lodge
+      </span>
+      <span style="display:block">
+        14580 NE 145th St
+      </span>
+      <span style="display:block">
+        Woodinville, WA 98072
+      </span>
+    </p>
+    <img class="fade-in-image" id="pic" src="./0.jpg" style="max-width: 300px;" />
+  </div>
+</body>
+<script src="./player.js"></script>
 </html>
