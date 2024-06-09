@@ -3,4 +3,4 @@ let counter = 1
 setInterval(() => {
     pic.setAttribute("src", `./${counter % 4}.jpg`)
     counter++
-}, 3000)
+}, 6000)
